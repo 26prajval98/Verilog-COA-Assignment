@@ -1,0 +1,93 @@
+$date
+	Wed Nov 01 00:02:25 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ms
+$end
+$scope module testbench $end
+$var wire 32 ! Rdata2 [31:0] $end
+$var wire 32 " Rdata1 [31:0] $end
+$var reg 5 # Rreg1 [4:0] $end
+$var reg 5 $ Rreg2 [4:0] $end
+$var reg 1 % enwr $end
+$var reg 5 & regNum [4:0] $end
+$var reg 32 ' wrdata [31:0] $end
+$scope module M $end
+$var wire 5 ( Rreg1 [4:0] $end
+$var wire 5 ) Rreg2 [4:0] $end
+$var wire 1 % enwr $end
+$var wire 5 * regNum [4:0] $end
+$var wire 32 + wrdata [31:0] $end
+$var reg 32 , Rdata1 [31:0] $end
+$var reg 32 - Rdata2 [31:0] $end
+$var reg 1024 . Reg [1023:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx .
+b0 -
+b0 ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+x%
+bx $
+bx #
+b0 "
+b0 !
+$end
+#1000
+bx00000000000000000000000001000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx .
+b0 #
+b0 (
+b0 $
+b0 )
+b1010 &
+b1010 *
+b1000000 '
+b1000000 +
+1%
+#2000
+bx00000000000000000000000000011111xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx .
+b1110 &
+b1110 *
+b11111 '
+b11111 +
+#3000
+bx00000000000000000000000000101101xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000000011111xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx00000000000000000000000001000000xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx .
+b10011 &
+b10011 *
+b101101 '
+b101101 +
+#4000
+b11111 !
+b11111 -
+b1000000 "
+b1000000 ,
+bx '
+bx +
+bx &
+bx *
+b1110 $
+b1110 )
+b1010 #
+b1010 (
+0%
+#5000
+b0 !
+b0 -
+b101101 "
+b101101 ,
+b0 $
+b0 )
+b10011 #
+b10011 (
+#10000
